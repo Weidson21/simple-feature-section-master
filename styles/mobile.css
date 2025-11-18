@@ -42,7 +42,7 @@ main > section{
     background-color: #212936;
     height: 490px;
     width: 340px;
-    margin: 70px 30px;
+    margin: 70px 20px;
     border-radius: 10px;
     position: relative;
 }
@@ -51,6 +51,7 @@ main > section > div{
     background-color: #fceed8;
     height: 50px;
     width: 50px;
+    padding: 5px;
     border-radius: 50%;
     position: absolute;
     top: 25px;
@@ -63,8 +64,9 @@ main section.block1 > div#icon1 {
 
 main section.block2 > div#icon2{
     font-size: 1.9rem;
-    padding-left: 3px;
+    border-radius: 50%;
     background-color: #dee9fc;
+    position: absolute;
 }
 
 main section.block3 > div#icon3{
@@ -149,6 +151,15 @@ main section.block3 > img{
     }
     main > section{
         margin: 17px;
+    }
+    main > section > div{
+    background-color: #fceed8;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
     }
     main > section.block3{
         position: relative;
