@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root{
+    --cor-h2: #d2d5da;
+    --cor-p: #9da3ae;
+    --font: "Outfit", sans-serif;
+    --borda-radius: 10px;
+}
+*{
+    box-sizing: border-box;
+}
+*::after, *::before{
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #121826;
+    background-image: url(../resources/Background_image@2x.png);
+}
+
+header h1{
+    color: var(--cor-h2);
+    font-family: var(font);
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+}
+
+header p{
+    color: #9da3ae;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+}
+/* Posicionando as divs*/
+
+main > section{
+    background-color: #212936;
+    height: 490px;
+    width: 340px;
+    margin: 70px 70px;
+    border-radius: 10px;
+    position: relative;
+}
+
+main > section > div{
+    background-color: #fceed8;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+main section.block1 > div#icon1 {
+    font-size: 2.2rem;
+}
+
+main section.block2 > div#icon2{
+    font-size: 1.9rem;
+    padding-left: 3px;
+    background-color: #dee9fc;
+}
+
+main section.block3 > div#icon3{
+    font-size: 2.2rem;
+    background-color: #fbe5e6;
+}
+main section.block1 > h2{
+    font-family: var(--font);
+    color: var(--cor-h2);
+    position: absolute;
+    top: 77px;
+    left: 20px;
+}
+
+main section.block1> p{
+    font-family: var(--font);
+    color: var(--cor-p);
+    padding-top: 10px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+main section.block1 > img{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    border-radius: var(--borda-radius);
+}
+
+main section.block2 > h2{
+    font-family: var(--font);
+    color: var(--cor-h2);
+    position: absolute;
+    top: 77px;
+    left: 20px;
+}
+
+main section.block2 > p{
+    font-family: var(--font);
+    color: var(--cor-p);
+    padding-top: 10px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+main section.block2 > img{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    border-radius: var(--borda-radius);
+}
+
+main section.block3 > h2{
+    font-family: var(--font);
+    color: var(--cor-h2);
+    position: absolute;
+    top: 77px;
+    left: 20px;
+}
+
+main section.block3 > p{
+    font-family: var(--font);
+    color: var(--cor-p);
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+main section.block3 > img{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    border-radius: var(--borda-radius);
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    main{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+    main > section{
+        margin: 17px;
+    }
+    main > section.block3{
+        position: relative;
+        left: 240px;
+    }
+}
+
+@media (min-width: 1024px){
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main > section > img{
+       width: 268px;
+       height: 210px;
+    }
+}
